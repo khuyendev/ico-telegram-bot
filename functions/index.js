@@ -23,8 +23,8 @@ bot.command('/cutdi', (ctx) => {
 }).catch(err => console.log(err));
 bot.on('new_chat_members', (ctx) => {
     memberJoined++;
-    if (memberJoined / TeleConfig.WELCOME_WHEN === 0) {
-        return ctx.reply(TeleConfig.WELCOME_MGS);
+    if (memberJoined / WELCOME_WHEN === 0) {
+        return ctx.reply(WELCOME_MGS);
     }
 }).catch(err => console.log(err));
 bot.command('/team@MonoCapitalBot', (ctx) => {
